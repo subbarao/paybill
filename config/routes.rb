@@ -1,5 +1,6 @@
 Paybill::Application.routes.draw do
-  get 'india' => 'first#second'
+  get 'contactsu' => 'first#contactus', as: 'contactus'
+  get 'about' => 'first#contactus', as: 'about'
 
   get '/amazon/gp/:d' => 'first#amazon'
   get '/cnn/:year/:month/:day' => 'first#cnn'
